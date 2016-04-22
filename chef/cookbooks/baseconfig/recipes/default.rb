@@ -14,7 +14,3 @@ end
 execute 'ntp_restart' do
   command 'service ntp restart'
 end
-
-
-package "nodejs"
-package "npm"
