@@ -14,3 +14,11 @@ end
 execute 'ntp_restart' do
   command 'service ntp restart'
 end
+
+execute 'ruby_install' do
+	command 'apt-get install ruby-full -y'
+end
+
+execute 'heroku cli install' do
+	command 'wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh'
+end
